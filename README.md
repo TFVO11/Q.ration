@@ -32,6 +32,7 @@ photo curating web site for photograpers
   - javascript
   - css
   - html
+
  [font-end]
   - React.js
   - styled-components
