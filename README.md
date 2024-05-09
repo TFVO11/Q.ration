@@ -47,3 +47,6 @@ photo curating web site for photograpers
   - MongoDB by Mongoose
  [version control]
   - git using github 
+
+## figma
+![Qration 피그마](https://github.com/TFVO11/Q.ration/assets/104477705/ad5417e8-bf32-49e1-b548-d3268ccb64e5)
