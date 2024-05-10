@@ -1,8 +1,8 @@
 export const page = {
   main : {
     name : "Curation",
-    path : "/curation",
-    link : "/curation"
+    path : "/",
+    link : "/"
   },
 
   sub : {
@@ -23,3 +23,5 @@ export const page = {
     link : "/management",
   }
 }
+
+export const PAGE_ARR = Object.values(page)
