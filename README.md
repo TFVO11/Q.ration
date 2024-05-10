@@ -27,7 +27,7 @@ photo curating web site for photograpers
  - 로그인 버튼 색깔 변화나 그림자 유무
  - 게시물 올리기 버튼 색깔 변화나 그림자 유무
 
-## :gem: Skills
+## :gem: Skills :gem:
  [Language]
   - javascript
   - css
