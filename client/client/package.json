@@ -1,12 +1,8 @@
 {
-<<<<<<< HEAD
   "name": "client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.5",
-    "@mui/material": "^5.15.17",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -14,8 +10,6 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.0",
     "react-scripts": "5.0.1",
-    "recoil": "^0.7.7",
-    "styled-components": "^6.1.11",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -41,14 +35,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "webpack": "^5.91.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4"
-=======
-  "dependencies": {
-    "react-router-dom": "^6.23.0"
->>>>>>> a60404772327f79136a9003ee775f7270130b66b
   }
 }

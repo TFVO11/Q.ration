@@ -1,4 +1,3 @@
-
 export const UI_color = {
   main_color : {
     prime : "#D9D9D9",
