@@ -4,16 +4,17 @@ import Footer from "./Footer";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Box from "@mui/material/Box";
+import Profile from "./profile/Profile";
 
 import { NavBox, NavWrapper, SImg } from "./sttyle/Nav.styled";
 
 function Nav() {
-  const isLogin = false;
+  const isLogin = true;
 
   const card = (
     <Fragment>
       <CardContent sx={{color : "primary.main"}}>
-        {!isLogin ? <SImg src="img/logo1.png" /> : <></>}
+        {!isLogin ? <SImg src="img/logo1.png" /> : <Profile />}
       </CardContent>
     </Fragment>
   );
