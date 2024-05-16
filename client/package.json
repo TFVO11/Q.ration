@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -46,9 +45,6 @@
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4"
-=======
-  "dependencies": {
-    "react-router-dom": "^6.23.0"
->>>>>>> a60404772327f79136a9003ee775f7270130b66b
-  }
+
+}
 }
