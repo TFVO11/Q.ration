@@ -1,34 +1,27 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
-import Skeleton from "@mui/material/Skeleton";
 import Avatar from "@mui/material/Avatar";
 import { Box, Button } from "@mui/material";
-
-const ProfileSkeleton = ({ variant, width, height, style }) => {
-  return (
-    <Skeleton
-      animation="wave"
-      variant={variant}
-      width={width}
-      height={height}
-      style={style}
-    />
-  );
-};
-
-const ProfileInfo = ({ loading, data }) => {
-  if (!loading) {
-    return <ProfileSkeleton style={{ marginBottom: 6, marginTop: 6 }} />;
-  }
-  return (
-    <Typography variant="h6" display="block" color="primary.contrastText">
-      {data}
-    </Typography>
-  );
-};
+import withLoading from "../../../util/withLoading";
 
 function Profile(props) {
-  const loading = true;
+  const loading = false;
+
+  const StyledAvatar = () => (
+    <Avatar
+      alt="profile img"
+      src={isAvatar(props.data)}
+      sx={{ width: 88, height: 88 }}
+    />
+  );
+  const StyledTypo = (props) => (
+    <Typography variant="h6" display="block" color="primary.contrastText">
+      {props.children}
+    </Typography>
+  );
+
+  const StyledAvatarWithLoading = withLoading(StyledAvatar);
+  const StyledTypoWithLoading = withLoading(StyledTypo);
 
   const isAvatar = (data) => {
     const state = data ? `${data.Avatar}` : "/img/Avatar.png";
@@ -38,25 +31,27 @@ function Profile(props) {
 
   return (
     <div>
-      {!loading ? (
-        <ProfileSkeleton
-          animation="wave"
-          variant="circular"
-          width={88}
-          height={88}
-        />
-      ) : (
-        <Avatar
-          alt="profile img"
-          src={isAvatar(props.data)}
-          sx={{ width: 88, height: 88 }}
-        />
-      )}
+      <StyledAvatarWithLoading
+        variant="circular"
+        width={88}
+        height={88}
+        loading={loading}
+      />
       <Box>
-        <ProfileInfo loading={loading} data="김영준" />
+        <StyledTypoWithLoading
+          style={{ marginBottom: 6, marginTop: 6 }}
+          loading={loading}
+        >
+          김영준
+        </StyledTypoWithLoading>
       </Box>
       <Box>
-        <ProfileInfo loading={loading} data="cosmoyj7733@gmail.com" />
+        <StyledTypoWithLoading
+          style={{ marginBottom: 6, marginTop: 6 }}
+          loading={loading}
+        >
+          cosmoyj7733@gmail.com
+        </StyledTypoWithLoading>
       </Box>
       <Box>
         <Button variant="contained" color="third">
