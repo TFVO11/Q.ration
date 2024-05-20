@@ -29,40 +29,49 @@ export const users = {
 
 export const curation =  [
   {
-    user: "성공성냥",
-    postNum : "1",
-    image: ""
+    thumbnail : "/img/IMG_0013.jpg"
   },
   {
-    user: "후아유",
-    postNum : "1",
-    image: ""
+    thumbnail : "/img/IMG_0016.jpg"
   },
   {
-    user: "성공성냥",
-    postNum : "1",
-    image: ""
+    thumbnail : "/img/IMG_0020.jpg"
   },
   {
-    user: "김영준",
-    postNum : "1",
-    image: ""
+    thumbnail : "/img/IMG_0026.jpg"
   },
   {
-    user: "후아유",
-    postNum : "1",
-    image: ""
+    thumbnail : "/img/IMG_0029.jpg"
   },
   {
-    user: "성공성냥",
-    postNum : "1",
-    image: ""
+    thumbnail : "/img/IMG_0033.jpg"
   },
   {
-    user: "성공성냥",
-    postNum : "1",
-    image: ""
+    thumbnail : "/img/IMG_0037.jpg"
   },
+  {
+    thumbnail : "/img/IMG_0040.jpg"
+  },
+  {
+    thumbnail : "/img/IMG_0041.jpg"
+  },
+  {
+    thumbnail : "/img/IMG_0043.jpg"
+  },
+  {
+    thumbnail : "/img/IMG_0044.jpg"
+  },
+  {
+    thumbnail : "/img/IMG_0045.jpg"
+  },
+  {
+    thumbnail : "/img/IMG_0049.jpg"
+  },
+  {
+    thumbnail : "/img/IMG_0050.jpg"
+  },
+  
+
 ]
 
 export const sub = [

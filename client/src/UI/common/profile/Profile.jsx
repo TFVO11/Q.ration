@@ -14,6 +14,7 @@ function Profile(props) {
       sx={{ width: 88, height: 88 }}
     />
   );
+
   const StyledTypo = (props) => (
     <Typography variant="h6" display="block" color="primary.contrastText">
       {props.children}

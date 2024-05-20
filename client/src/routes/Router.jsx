@@ -1,4 +1,4 @@
-import Curation from "../pages/common/Curation";
+import Curation from "../pages/common/curation/Curation";
 import Subscribe from "../pages/common/Subscribe";
 import MyCuration from "../pages/common/MyCuration";
 import Management from "../pages/common/Management";

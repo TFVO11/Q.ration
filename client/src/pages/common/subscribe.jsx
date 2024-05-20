@@ -1,6 +1,6 @@
 import React from 'react'
 
-function subscribe() {
+function Subscribe() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function subscribe() {
   )
 }
 
-export default subscribe
+export default Subscribe;

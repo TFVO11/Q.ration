@@ -1,14 +1,12 @@
 import "./App.css";
 import React from "react";
-import { Fragment } from "react";
-import RouterComp from "./routes/RouteComp";
-import { BrowserRouter } from "react-router-dom";
+import RouterComp from "./routes/RouterComp";
 
 function App() {
   return (
-    <BrowserRouter>
+    <div>
       <RouterComp />
-    </BrowserRouter>
+    </div>
   );
 }
 
