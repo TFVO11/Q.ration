@@ -3,17 +3,25 @@ import Nav from "../UI/common/Nav";
 
 import { Route, Routes } from "react-router-dom";
 import { Fragment } from "react";
+import styled from "styled-components"
+
+
+const StyledDivBox = styled.div`
+  display: flex;
+`
 
 const RouterComp = () => {
   console.log("RouterComp")
   return (
     <Fragment>
+      <StyledDivBox>
       <Nav />
       <Routes>
         {ROUTES_ARR.map((el) => (
           <Route key={el.path} path={el.link} element={el.element} />
         ))}
       </Routes>
+      </StyledDivBox>
     </Fragment>
   );
 };

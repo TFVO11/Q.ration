@@ -1,19 +1,22 @@
 import React from "react";
 import CurationItem from "./CurationItem";
+import { StyledGridContainer } from "./curation.style";
+import { Grid } from "@mui/material";
+
 
 function CurationItems(props) {
   const items = props.thumbnails;
-  console.log(items)
+
   return (
-    <div>
+    <Grid container spacing={2} justifyContent={"center"}>
       {items.map((item) => {
         return (
-          <div>
+          <Grid item>
             <CurationItem thumbnail={item.thumbnail}/>
-          </div>
+          </Grid>
         );
       })}
-    </div>
+    </Grid>
   );
 }
 

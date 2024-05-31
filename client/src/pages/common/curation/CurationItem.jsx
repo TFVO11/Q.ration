@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Card, Box, Avatar } from "@mui/material";
+import { Card, Box, Avatar, CardMedia, Grid } from "@mui/material";
 
 import withLoading from "../../../util/withLoading";
 
@@ -13,9 +13,14 @@ function CurationItem(props) {
 
   return (
     <Fragment>
-      <Box width={100} height={100}>
-        <Card width={100} height={100}>
-          <Avatar src={props.thumbnail} alt="thumbnail img" sx={{ width: 100, height: 100 }} />
+      <Box width={450} >
+        <Card width={400} height={271}>
+          <CardMedia
+            component="img"
+            height="194"
+            image={props.thumbnail}
+            alt="Paella dish"
+          />
         </Card>
       </Box>
     </Fragment>

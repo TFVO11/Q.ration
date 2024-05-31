@@ -1,17 +1,13 @@
 import React from "react";
 import CurationItems from "./CurationItems";
 import { curation } from "../../../object/dummy";
-import { Box } from "@mui/material";
+import { Container } from "./curation.style";
 
 function Curation() {
-  console.log("Curation")
-  
   return (
-    <div>
-      <Box>
-        <CurationItems thumbnails={curation}/>
-      </Box>
-    </div>
+    <Container>
+      <CurationItems thumbnails={curation} />
+    </Container>
   );
 }
 
